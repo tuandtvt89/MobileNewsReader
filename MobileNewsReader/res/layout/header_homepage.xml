@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/app_layout_topbar" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="50.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:onClick="actionMenuOnClick">
-        <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_show_menu" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_show_menu" android:layout_centerVertical="true" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/app_layout_topbar"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="#ffebebeb" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:onClick="actionMenuOnClick" >
+
+        <ImageView
+            android:id="@id/imv_show_menu"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/ic_show_menu" />
     </RelativeLayout>
-    <LinearLayout android:gravity="center" android:id="@id/lil_topbar_logo_app" android:background="@drawable/topbar_bg_logo_off" android:layout_width="110.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
-        <ImageView android:id="@id/imv_logo_homepage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+
+    <LinearLayout
+        android:id="@id/lil_topbar_logo_app"
+        android:layout_width="110.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/topbar_bg_logo_off"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@id/imv_logo_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" />
     </LinearLayout>
-    <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_notify_cache" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true">
-        <ImageView android:layout_gravity="center" android:id="@id/imv_notify_cache2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cache_notify_4" />
-        <ImageView android:id="@id/imv_notify_cache" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cache_notify_3" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@id/rel_notify_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6.0dip"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@id/imv_notify_cache2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cache_notify_4" />
+
+        <ImageView
+            android:id="@id/imv_notify_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="8.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cache_notify_3" />
     </RelativeLayout>
+
 </RelativeLayout>

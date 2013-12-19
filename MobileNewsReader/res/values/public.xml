@@ -298,27 +298,8 @@
     <public type="drawable" name="ic_with_wifi" id="0x7f02007a" />
     <public type="drawable" name="icon_logout" id="0x7f02007b" />
     <public type="drawable" name="tab_indicator" id="0x7f0200ae" />
-    <public type="layout" name="com_facebook_friendpickerfragment" id="0x7f030001" />
-    <public type="layout" name="com_facebook_login_activity_layout" id="0x7f030002" />
-    <public type="layout" name="com_facebook_picker_activity_circle_row" id="0x7f030003" />
-    <public type="layout" name="com_facebook_picker_checkbox" id="0x7f030004" />
-    <public type="layout" name="com_facebook_picker_image" id="0x7f030005" />
-    <public type="layout" name="com_facebook_picker_list_row" id="0x7f030006" />
-    <public type="layout" name="com_facebook_picker_list_section_header" id="0x7f030007" />
-    <public type="layout" name="com_facebook_picker_search_box" id="0x7f030008" />
-    <public type="layout" name="com_facebook_picker_title_bar" id="0x7f030009" />
-    <public type="layout" name="com_facebook_picker_title_bar_stub" id="0x7f03000a" />
-    <public type="layout" name="com_facebook_placepickerfragment" id="0x7f03000b" />
-    <public type="layout" name="com_facebook_placepickerfragment_list_row" id="0x7f03000c" />
-    <public type="layout" name="com_facebook_usersettingsfragment" id="0x7f03000d" />
     <public type="layout" name="custom_screen" id="0x7f03000e" />
     <public type="layout" name="header_homepage" id="0x7f030010" />
-    <public type="layout" name="layout_content_frame" id="0x7f030017" />
-    <public type="layout" name="layout_image_item" id="0x7f030018" />
-    <public type="layout" name="layout_login_viet_id" id="0x7f03001a" />
-    <public type="layout" name="layout_menu_frame" id="0x7f03001d" />
-    <public type="layout" name="layout_transparent" id="0x7f03001e" />
-    <public type="layout" name="layout_webcontent_tab" id="0x7f03001f" />
     <public type="anim" name="fade_in" id="0x7f040000" />
     <public type="anim" name="fade_out" id="0x7f040001" />
     <public type="anim" name="flipinnext" id="0x7f040002" />
