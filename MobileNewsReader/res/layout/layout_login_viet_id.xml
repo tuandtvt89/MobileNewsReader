@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/loaderLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBar" android:padding="0.0dip" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="0.0dip" android:layout_centerInParent="true" style="@style/ProgressBar" />
+    </RelativeLayout>
+    <vcc.mobilenewsreader.customeview.WebviewMobileReader android:id="@id/my_webview_vietid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip" />
+    <ImageButton android:id="@id/btn_Close" android:background="@*android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/close_x" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <Button android:id="@id/btn_Logout" android:background="@xml/selector_btn_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="Đăng xuất" android:layout_alignBottom="@id/my_webview_vietid" android:layout_centerHorizontal="true" />
+</RelativeLayout>

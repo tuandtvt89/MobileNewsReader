@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView android:id="@id/my_webview_comment" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrMode="pullFromStart" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:id="@id/loaderLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBarDetail" android:padding="0.0dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="0.0dip" android:layout_centerInParent="true" style="@style/ProgressBar" />
+    </RelativeLayout>
+</RelativeLayout>

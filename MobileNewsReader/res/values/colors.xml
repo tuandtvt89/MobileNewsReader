@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_facebook_blue">#ff3b5998</color>
+    <color name="com_facebook_usersettingsfragment_connected_text_color">#ffffffff</color>
+    <color name="com_facebook_usersettingsfragment_connected_shadow_color">#ff000000</color>
+    <color name="com_facebook_usersettingsfragment_not_connected_text_color">#ffa6aed7</color>
+    <color name="com_facebook_loginview_text_color">#ffffffff</color>
+    <color name="vpi__background_holo_dark">#ff3c3c3c</color>
+    <color name="vpi__background_holo_light">#ff3c3c3c</color>
+    <item type="color" name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</item>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</item>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="username_text">#ffffffff</color>
+    <color name="username_edit">#ff000000</color>
+    <color name="password_text">#ffffffff</color>
+    <color name="password_edit">#ff000000</color>
+    <color name="ssl_text_label">#ffffffff</color>
+    <color name="ssl_text_value">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="geolocation_permissions_prompt_background">#ffdddddd</color>
+    <color name="red">#ff990000</color>
+    <color name="green">#ff009900</color>
+    <color name="blue">#ff000099</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red_delete">#ffe74c3c</color>
+    <color name="app_color">#fffb9600</color>
+    <color name="hompage_color">#bbfb9600</color>
+    <color name="vcc_vpi__background_holo_dark">#ff3c3c3c</color>
+    <color name="vcc_vpi__background_holo_light">#ff3c3c3c</color>
+    <item type="color" name="vcc_vpi__bright_foreground_holo_dark">@color/vcc_vpi__background_holo_light</item>
+    <item type="color" name="vcc_vpi__bright_foreground_holo_light">@color/vcc_vpi__background_holo_dark</item>
+    <color name="vcc_vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vcc_vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="vcc_vpi__bright_foreground_inverse_holo_dark">@color/vcc_vpi__bright_foreground_holo_light</item>
+    <item type="color" name="vcc_vpi__bright_foreground_inverse_holo_light">@color/vcc_vpi__bright_foreground_holo_dark</item>
+</resources>

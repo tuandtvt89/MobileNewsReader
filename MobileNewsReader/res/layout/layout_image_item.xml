@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <vcc.mobilenewsreader.customeview.TouchImageView android:id="@id/item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:id="@id/loaderLayout" android:background="@*android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progressBar" android:padding="0.0dip" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="0.0dip" android:layout_centerInParent="true" style="@style/ProgressBar" />
+    </RelativeLayout>
+</RelativeLayout>

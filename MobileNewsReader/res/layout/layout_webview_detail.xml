@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.WebviewLoading android:id="@id/my_webview_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:id="@id/loaderLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btn_close_page_detail_tab_in_bottom" android:background="@xml/bg_close_detail_page" android:layout_width="130.0dip" android:layout_height="35.0dip" android:layout_marginBottom="15.0dip" android:minWidth="100.0dip" android:text="Đóng" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/progressBarDetail" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="0.0dip" android:max="100" android:progressDrawable="@drawable/green_progress_bar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>
