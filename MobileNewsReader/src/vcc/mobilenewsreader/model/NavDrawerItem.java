@@ -3,8 +3,9 @@ package vcc.mobilenewsreader.model;
 public class NavDrawerItem {
 	
 	private String title;
+	private String content;
 	private int icon;
-	private int forcus;
+	private int forward;
 	private String count = "0";
 	// boolean to set visiblity of the counter
 	private boolean isCounterVisible = false;
@@ -54,12 +55,20 @@ public class NavDrawerItem {
 	public void setCounterVisibility(boolean isCounterVisible){
 		this.isCounterVisible = isCounterVisible;
 	}
-
-	public int getForcus() {
-		return forcus;
+	
+	public String getContent() {
+		return content;
 	}
 
-	public void setForcus(int forcus) {
-		this.forcus = forcus;
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public int getForward() {
+		return forward;
+	}
+
+	public void setForward(int forward) {
+		this.forward = forward;
 	}
 }

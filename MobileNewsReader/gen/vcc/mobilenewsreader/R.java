@@ -1192,7 +1192,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int com_facebook_usersettingsfragment_login_button=0x7f080032;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f080030;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f080031;
-        public static final int content=0x7f0800aa;
+        public static final int content=0x7f0800a9;
         public static final int contentLayout=0x7f080063;
         public static final int content_frame=0x7f080059;
         public static final int disabled=0x7f080008;
@@ -1202,7 +1202,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int expandableListView=0x7f08007d;
         public static final int fl_inner=0x7f08009d;
         public static final int flip=0x7f080010;
-        public static final int focus=0x7f0800a9;
+        public static final int forward=0x7f0800aa;
         public static final int frame_container=0x7f0800a6;
         public static final int fullscreen=0x7f080017;
         public static final int fullscreen_content_controls=0x7f080065;
