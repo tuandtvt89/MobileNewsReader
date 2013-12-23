@@ -42,6 +42,16 @@ public final class R {
         public static final int translate_hide_from_top=0x7f04001e;
         public static final int translate_show_from_top=0x7f04001f;
     }
+    public static final class array {
+        public static final int nav_drawer_content=0x7f0e0001;
+        /**  Nav Drawer List Item Icons 
+ Keep them in order as the titles are in 
+         */
+        public static final int nav_drawer_icons=0x7f0e0002;
+        /**  Nav Drawer Menu Items 
+         */
+        public static final int nav_drawer_title=0x7f0e0000;
+    }
     public static final class attr {
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form

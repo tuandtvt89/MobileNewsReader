@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
-    <style name="AppTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
-    <style name="com_facebook_loginview_default_style" parent="@*android:style/Widget.Button">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+    <style name="AppTheme" parent="AppBaseTheme" />
+    <style name="com_facebook_loginview_default_style" parent="android:style/Widget.Button">
         <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
         <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
         <item name="android:gravity">center</item>
@@ -11,7 +12,8 @@
         <item name="android:height">@dimen/com_facebook_loginview_height</item>
         <item name="android:width">@dimen/com_facebook_loginview_width</item>
     </style>
-    <style name="com_facebook_loginview_silver_style" parent="@*android:style/Widget.Button">
+
+    <style name="com_facebook_loginview_silver_style" parent="android:style/Widget.Button">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#ff4b5164</item>
@@ -20,11 +22,14 @@
         <item name="android:height">44.0dip</item>
         <item name="android:width">205.0dip</item>
     </style>
-    <style name="Theme.PageIndicatorDefaults" parent="@*android:style/Theme">
+
+    <style name="Theme.PageIndicatorDefaults" parent="android:style/Theme">
         <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
+
     <style name="Widget" />
+
     <style name="Widget.TabPageIndicator" parent="@style/Widget">
         <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
         <item name="android:textSize">12.0sp</item>
@@ -36,18 +41,22 @@
         <item name="android:paddingBottom">12.0dip</item>
         <item name="android:maxLines">1</item>
     </style>
+
     <style name="TextAppearance.TabPageIndicator" parent="@style/Widget">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/vpi__dark_theme</item>
     </style>
+
     <style name="Widget.IconPageIndicator" parent="@style/Widget">
         <item name="android:layout_marginLeft">6.0dip</item>
         <item name="android:layout_marginRight">6.0dip</item>
     </style>
+
     <style name="ProgressBar">
         <item name="android:visibility">gone</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:indeterminateDrawable">@drawable/progressbar_layout</item>
     </style>
+
 </resources>

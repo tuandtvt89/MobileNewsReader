@@ -3,17 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="52dp"
     android:background="@drawable/list_selector" >
-
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"    
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_cafef" />
     
 
     <TextView
@@ -26,7 +15,7 @@
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:paddingRight="40dp"
         android:paddingTop="2dp"
-        android:text="Dan tri"
+        android:text="Dân trí"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/black" />
 
@@ -40,17 +29,26 @@
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:paddingRight="40dp"
         android:layout_marginTop="30dp"
-        android:text="trang dien tu"
+        android:text="Đọc tin tổng hợp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/black" />
 
     <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_dantri" />
+
+    <ImageView
         android:id="@+id/forward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/icon"
-        android:layout_marginRight="18dp"
-        android:src="@drawable/ic_forward" />
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/navigator_icon_forward" />
 
 </RelativeLayout>

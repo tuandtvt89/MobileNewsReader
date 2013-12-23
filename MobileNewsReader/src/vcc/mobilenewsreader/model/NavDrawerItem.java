@@ -16,7 +16,11 @@ public class NavDrawerItem {
 		this.title = title;
 		this.icon = icon;
 	}
-	
+	public NavDrawerItem(String title, String content, int icon){
+		this.title = title;
+		this.icon = icon;
+		this.content = content;
+	}
 	public NavDrawerItem(String title, int icon, boolean isCounterVisible, String count){
 		this.title = title;
 		this.icon = icon;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Kênh 14</string>
     <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
     <string name="com_facebook_loginview_log_out_button">Log Out</string>
@@ -104,4 +105,38 @@
     <string name="help_package">help.setting</string>
     <string name="offline_package">offline.setting</string>
     <string name="logout_package">logout.setting</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_title">
+        <item>Dân trí</item>
+        <item>SohaNews</item>
+        <item>CafeF</item>
+        <item>CafeBiz</item>
+        <item>GenK</item>
+        <item>GameK</item>
+        <item>AutoPro</item>
+        <item>Afamily</item>
+    </string-array>
+   <string-array name="nav_drawer_content">
+        <item>Đọc tin tổng hợp</item>
+        <item>Tin tức tổng hợp, tin nhanh mới nhất</item>
+        <item>Kênh thông tin kinh tế - tài chính</item>
+        <item>Thông tin kinh doanh - Doanh nhân</item>
+        <item>Trang dành cho tín đồ công nghệ</item>
+        <item>Kênh thông tin mới nhất về Game</item>
+        <item>Kênh thông tin ô tô, xe máy</item>
+        <item>Chuyên trang dành cho phụ nữ trẻ em</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/logo_dantri</item>
+        <item>@drawable/logo_soha</item>
+        <item>@drawable/logo_cafef</item>
+        <item>@drawable/logo_cafebiz</item>
+        <item>@drawable/logo_genk</item>
+        <item>@drawable/logo_gamek</item>
+        <item>@drawable/logo_autopro</item>
+        <item>@drawable/logo_afamily</item>
+    </array>
+
 </resources>
