@@ -298,8 +298,6 @@
     <public type="drawable" name="ic_with_wifi" id="0x7f02007a" />
     <public type="drawable" name="icon_logout" id="0x7f02007b" />
     <public type="drawable" name="tab_indicator" id="0x7f0200ae" />
-    <public type="layout" name="custom_screen" id="0x7f03000e" />
-    <public type="layout" name="header_homepage" id="0x7f030010" />
     <public type="anim" name="fade_in" id="0x7f040000" />
     <public type="anim" name="fade_out" id="0x7f040001" />
     <public type="anim" name="flipinnext" id="0x7f040002" />

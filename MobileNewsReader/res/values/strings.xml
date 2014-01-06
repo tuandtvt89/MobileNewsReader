@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="categories">CHUYÊN MỤC</string>
     <string name="app_name">Kênh 14</string>
     <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
     <string name="com_facebook_loginview_log_out_button">Log Out</string>
@@ -116,7 +117,7 @@
         <item>AutoPro</item>
         <item>Afamily</item>
     </string-array>
-   <string-array name="nav_drawer_content">
+    <string-array name="nav_drawer_content">
         <item>Đọc tin tổng hợp</item>
         <item>Tin tức tổng hợp, tin nhanh mới nhất</item>
         <item>Kênh thông tin kinh tế - tài chính</item>

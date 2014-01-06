@@ -6,10 +6,6 @@
     <item type="id" name="abs__action_menu_presenter" />
     <item type="id" name="abs__progress_circular" />
     <item type="id" name="abs__progress_horizontal" />
-    <item type="id" name="selected_view" />
-    <item type="id" name="gridview" />
-    <item type="id" name="webview" />
-    <item type="id" name="scrollview" />
     <item type="id" name="abs__action_bar_title">false</item>
     <item type="id" name="abs__action_bar_subtitle">false</item>
     <item type="id" name="abs__imageButton">false</item>
@@ -64,7 +60,6 @@
     <item type="id" name="selection_user_name">false</item>
     <item type="id" name="authButton">false</item>
     <item type="id" name="drawer_layout">false</item>
-    <item type="id" name="content_frame">false</item>
     <item type="id" name="left_drawer">false</item>
     <item type="id" name="menu_list">false</item>
     <item type="id" name="right_drawer">false</item>
@@ -96,7 +91,6 @@
     <item type="id" name="row_thumb_right">false</item>
     <item type="id" name="row_date_right">false</item>
     <item type="id" name="row_headline_right">false</item>
-    <item type="id" name="menu_frame">false</item>
     <item type="id" name="row_category_left">false</item>
     <item type="id" name="row_image_left">false</item>
     <item type="id" name="row_category_color_left">false</item>
@@ -109,27 +103,6 @@
     <item type="id" name="row_color_bar_right">false</item>
     <item type="id" name="row_color_bar">false</item>
     <item type="id" name="row_title">false</item>
-    <item type="id" name="com_facebook_picker_list_view">false</item>
-    <item type="id" name="com_facebook_picker_activity_circle">false</item>
-    <item type="id" name="com_facebook_login_activity_progress_bar">false</item>
-    <item type="id" name="com_facebook_picker_row_activity_circle">false</item>
-    <item type="id" name="com_facebook_picker_checkbox">false</item>
-    <item type="id" name="com_facebook_picker_image">false</item>
-    <item type="id" name="com_facebook_picker_profile_pic_stub">false</item>
-    <item type="id" name="com_facebook_picker_title">false</item>
-    <item type="id" name="com_facebook_picker_checkbox_stub">false</item>
-    <item type="id" name="com_facebook_picker_list_section_header">false</item>
-    <item type="id" name="com_facebook_picker_top_bar">false</item>
-    <item type="id" name="com_facebook_picker_done_button">false</item>
-    <item type="id" name="com_facebook_picker_divider">false</item>
-    <item type="id" name="com_facebook_picker_title_bar_stub">false</item>
-    <item type="id" name="com_facebook_picker_title_bar">false</item>
-    <item type="id" name="com_facebook_placepickerfragment_search_box_stub">false</item>
-    <item type="id" name="search_box">false</item>
-    <item type="id" name="picker_subtitle">false</item>
-    <item type="id" name="com_facebook_usersettingsfragment_logo_image">false</item>
-    <item type="id" name="com_facebook_usersettingsfragment_profile_name">false</item>
-    <item type="id" name="com_facebook_usersettingsfragment_login_button">false</item>
     <item type="id" name="author_text_view">false</item>
     <item type="id" name="date_text_view">false</item>
     <item type="id" name="content_text_view">false</item>
@@ -139,16 +112,9 @@
     <item type="id" name="more_frame">false</item>
     <item type="id" name="row_icon">false</item>
     <item type="id" name="row_desc">false</item>
-    <item type="id" name="fl_inner">false</item>
-    <item type="id" name="pull_to_refresh_image">false</item>
-    <item type="id" name="pull_to_refresh_progress">false</item>
-    <item type="id" name="pull_to_refresh_text">false</item>
-    <item type="id" name="pull_to_refresh_sub_text">false</item>
-    <item type="id" name="slidingmenumain">false</item>
     <item type="id" name="action_comment">false</item>
     <item type="id" name="action_relate">false</item>
     <item type="id" name="action_share">false</item>
-    <item type="id" name="action_settings">false</item>
     <item type="id" name="gridview" />
     <item type="id" name="webview" />
     <item type="id" name="scrollview" />

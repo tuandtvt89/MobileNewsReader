@@ -4,19 +4,25 @@ import java.util.ArrayList;
 
 import tuanda.mobilenewsreader.R;
 import tuanda.mobilenewsreader.adapter.NavDrawerListAdapter;
+import tuanda.mobilenewsreader.fragment.HomeFragment;
 import tuanda.mobilenewsreader.model.NavDrawerItem;
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+@SuppressLint("NewApi")
 public class MainActivity extends Activity {
 
 	private DrawerLayout mDrawerLayout;
@@ -81,7 +87,7 @@ public class MainActivity extends Activity {
 		getActionBar().setHomeButtonEnabled(true);
 
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-				R.drawable.ic_kenh14, // nav menu toggle icon
+				R.drawable.menu, // nav menu toggle icon
 				R.string.app_name, // nav drawer open - description for
 									// accessibility
 				R.string.app_name // nav drawer close - description for
@@ -103,7 +109,7 @@ public class MainActivity extends Activity {
 
 		if (paramBundle == null) {
 			// on first time display view for first nav item
-			// displayView(0);
+			 displayView(0);
 		}
 
 	}
@@ -142,6 +148,35 @@ public class MainActivity extends Activity {
 	}
 
 	/**
+	 * Diplaying fragment view for selected nav drawer list item
+	 * */
+	private void displayView(int position) {
+		// update the main content by replacing fragments
+		Fragment fragment = null;
+		switch (position) {
+		case 0:
+			fragment = new HomeFragment();
+		default:
+			break;
+		}
+
+		if (fragment != null) {
+			FragmentManager fragmentManager = getFragmentManager();
+			fragmentManager.beginTransaction()
+					.replace(R.id.frame_container, fragment).commit();
+
+			// update selected item and title, then close the drawer
+			mDrawerList.setItemChecked(position, true);
+			mDrawerList.setSelection(position);
+			setTitle(navMenuTitles[position]);
+			mDrawerLayout.closeDrawer(mDrawerList);
+		} else {
+			// error in creating fragment
+			Log.e("MainActivity", "Error in creating fragment");
+		}
+	}
+
+	/**
 	 * Slide menu item click listener
 	 * */
 	private class SlideMenuClickListener implements
@@ -162,7 +197,7 @@ public class MainActivity extends Activity {
 
 	/**
 	 * When using the ActionBarDrawerToggle, you must call it during
-	 * onPostCreate() and onConfigurationChanged()...
+	 * onPostCreate() and onConfigurationChanged()....
 	 */
 
 	@Override

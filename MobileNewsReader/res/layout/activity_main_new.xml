@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    <FrameLayout
+        android:id="@id/content_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@id/pull_to_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:cacheColorHint="#00000000"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="disabled" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@id/left_drawer"
+        android:layout_width="220.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="#ff323232"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:paddingTop="2.0dip"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/categories"
+            android:textColor="#ff82878f"
+            android:textSize="17.0sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="#ff82878f" />
+        <ListView
+            android:id="@id/menu_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#ff323232"
+            android:divider="@drawable/margin_listview_divider" />
+    </LinearLayout>
+    <LinearLayout
+        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        android:id="@id/right_drawer"
+        android:layout_width="300.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:background="#ff323232"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/login_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/login_radius_background"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0" >
+
+            <com.facebook.widget.ProfilePictureView
+                android:id="@id/selection_profile_pic"
+                android:layout_width="42.0dip"
+                android:layout_height="42.0dip"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:padding="3.0dip"
+                facebook:preset_size="small" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10.0dip"
+                android:background="#ff82878f"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    android:id="@id/login_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffd3d3d3"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/login_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffd3d3d3"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@id/more_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff323232"
+            android:cacheColorHint="#ff323232"
+            android:divider="@null"
+            android:dividerHeight="0.0dip" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
