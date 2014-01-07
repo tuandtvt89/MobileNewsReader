@@ -1,25 +1,23 @@
 package tuanda.mobilenewsreader.fragment;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import tuanda.mobilenewsreader.R;
-import tuanda.mobilenewsreader.adapter.LazyAdapter;
+import tuanda.mobilenewsreader.adapter.RssLazyAdapter;
 import tuanda.mobilenewsreader.helper.AlertDialogManager;
 import tuanda.mobilenewsreader.helper.XMLParser;
+import tuanda.mobilenewsreader.model.RssItem;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Debug;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,20 +32,19 @@ public class HomeFragment extends Fragment {
 	// All static variables
 	static final String URL = "http://api.androidhive.info/music/music.xml";
 	static final String RSS_URL = "http://ngoisao.net/rss/hau-truong.rss";
-	ArrayList<HashMap<String, String>> songsList;
+	ArrayList<RssItem> rssItemList;
 	// Alert dialog manager
 	AlertDialogManager alert = new AlertDialogManager();
 	// Progress Dialog
 	private ProgressDialog pDialog;
 	// XML node keys
-	public static final String KEY_SONG = "song"; // parent node
-	public static final String KEY_ID = "id";
+	public static final String KEY_ITEM = "item"; // parent node
 	public static final String KEY_TITLE = "title";
-	public static final String KEY_ARTIST = "artist";
-	public static final String KEY_DURATION = "duration";
-	public static final String KEY_THUMB_URL = "thumb_url";
+	public static final String KEY_DESCRIPTION = "description";
+	public static final String KEY_DATE = "pubDate";
+	public static final String KEY_LINK = "link";
 	ListView list;
-	LazyAdapter adapter;
+	RssLazyAdapter adapter;
 
 	public HomeFragment() {
 	}
@@ -59,7 +56,7 @@ public class HomeFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_home, container,
 				false);
 		list = (ListView) rootView.findViewById(R.id.list);
-		songsList = new ArrayList<HashMap<String, String>>();
+		rssItemList = new ArrayList<RssItem>();
 		// Loading tracks in Background Thread
 		new LoadTracks().execute();
 		return rootView;
@@ -77,7 +74,7 @@ public class HomeFragment extends Fragment {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(getActivity());
-			pDialog.setMessage("Loading songs ...");
+			pDialog.setMessage("Đang tải ...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(false);
 			pDialog.show();
@@ -91,36 +88,36 @@ public class HomeFragment extends Fragment {
 			XMLParser parser = new XMLParser();
 			String xml = parser.getXmlFromUrl(RSS_URL); // getting XML from URL
 			Document doc = parser.getDomElement(xml); // getting DOM element
-			/*
-			 * NodeList nl = doc.getElementsByTagName(KEY_SONG); // looping
-			 * through all song nodes <song> for (int i = 0; i < nl.getLength();
-			 * i++) { // creating new HashMap HashMap<String, String> map = new
-			 * HashMap<String, String>(); Element e = (Element) nl.item(i); //
-			 * adding each child node to HashMap key => value map.put(KEY_ID,
-			 * parser.getValue(e, KEY_ID)); map.put(KEY_TITLE,
-			 * parser.getValue(e, KEY_TITLE)); map.put(KEY_ARTIST,
-			 * parser.getValue(e, KEY_ARTIST)); map.put(KEY_DURATION,
-			 * parser.getValue(e, KEY_DURATION)); map.put(KEY_THUMB_URL,
-			 * parser.getValue(e, KEY_THUMB_URL));
-			 * 
-			 * // adding HashList to ArrayList songsList.add(map); }
-			 */
 			NodeList nl = doc.getElementsByTagName("item");
-			Log.d("length", nl.getLength() + "");
 			for (int i = 0; i < nl.getLength(); i++) {
+				RssItem item = new RssItem();
 				Element e = (Element) nl.item(i);
-				//Log.d("description", e.getElementsByTagName("description")
-					//	.item(0).getFirstChild().getNodeValue().toString());
-				Matcher matcher = Pattern.compile("src=\"([^\"]+)")
+				item.setTitle(parser.getValue(e, KEY_TITLE));
+				Log.d("title: ", "" + parser.getValue(e, KEY_TITLE));
+				item.setDate(parser.getValue(e, KEY_DATE));
+				Log.d("date: ", "" + parser.getValue(e, KEY_DATE));
+				item.setLink(parser.getValue(e, KEY_LINK));
+				Log.d("link: ", "" + parser.getValue(e, KEY_LINK));
+				Matcher matcherUrl = Pattern.compile("src=\"([^\"]+)").matcher(
+						e.getElementsByTagName("description").item(0)
+								.getFirstChild().getNodeValue().toString());
+				Matcher matcherTitle = Pattern.compile("</br>([^<]*).")
 						.matcher(
 								e.getElementsByTagName("description").item(0)
 										.getFirstChild().getNodeValue()
 										.toString());
-				while (matcher.find()) {
-					Log.d("img url: ", "" + matcher.group(1));
+				while (matcherUrl.find()) {
+					Log.d("img url: ", "" + matcherUrl.group(1));
+					item.setImageUrl(matcherUrl.group(1));
+
 				}
-				// Log.d("description", parser.getValue(e, "description"));
+				while (matcherTitle.find()) {
+					Log.d("description: ", "" + matcherTitle.group(1));
+					item.setDescription(matcherTitle.group(1));
+				}
+				rssItemList.add(item);
 			}
+			Log.d("total", rssItemList.size() + "");
 			return null;
 		}
 
@@ -134,7 +131,7 @@ public class HomeFragment extends Fragment {
 			getActivity().runOnUiThread(new Runnable() {
 				public void run() {
 					// Getting adapter by passing xml data ArrayList
-					adapter = new LazyAdapter(getActivity(), songsList);
+					adapter = new RssLazyAdapter(getActivity(), rssItemList);
 					list.setAdapter(adapter);
 
 					// Click event for single list row

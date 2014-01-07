@@ -1141,11 +1141,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int progressbar=0x7f0200a8;
         public static final int progressbar_layout=0x7f0200a9;
         public static final int rihanna=0x7f0200cc;
+        public static final int rss_arrow_thumbnail=0x7f0200cd;
         public static final int selector_backbutton=0x7f0200aa;
         public static final int selector_btn_tab=0x7f0200ab;
         public static final int shadow=0x7f0200ac;
         public static final int share_button=0x7f0200ad;
-        public static final int splash_bg=0x7f0200cd;
+        public static final int splash_bg=0x7f0200ce;
         public static final int tab_indicator=0x7f0200ae;
         public static final int toggletoswitch=0x7f0200af;
         public static final int topbar_bg_logo_off=0x7f0200b0;
@@ -1234,7 +1235,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int article_lead_classic=0x7f0800f5;
         public static final int article_thumb_classic=0x7f0800f3;
         public static final int article_type_image=0x7f0800f4;
-        public static final int artist=0x7f080122;
         public static final int authButton=0x7f0800df;
         public static final int author_text_view=0x7f08010c;
         public static final int backButton=0x7f08008a;
@@ -1283,7 +1283,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int date_text_view=0x7f08010d;
         public static final int disabled=0x7f080008;
         public static final int drawer_layout=0x7f0800e0;
-        public static final int duration=0x7f080123;
         public static final int edit_query=0x7f0800c1;
         public static final int emailEditText=0x7f080090;
         public static final int error_console=0x7f080034;
@@ -1338,7 +1337,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int lil_tab_indicator=0x7f08007f;
         public static final int lil_topbar_logo_app=0x7f080045;
         public static final int list=0x7f08011f;
-        public static final int list_image=0x7f080121;
         public static final int list_slidermenu=0x7f080119;
         public static final int listview=0x7f08006d;
         public static final int loaderLayout=0x7f08005b;
@@ -1443,7 +1441,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int textview=0x7f08001d;
         public static final int thumbImage=0x7f08010f;
         public static final int thumb_layout=0x7f0800f1;
-        public static final int thumbnail=0x7f080120;
         public static final int title=0x7f080094;
         public static final int tob_3g_mode=0x7f08003d;
         public static final int tob_auto_cache=0x7f08003a;
@@ -1476,9 +1473,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int custom_screen=0x7f030002;
         public static final int drawer_list_item=0x7f030003;
         public static final int fragment_home=0x7f030004;
-        public static final int list_row=0x7f030005;
-        public static final int loading=0x7f030006;
-        public static final int main=0x7f030007;
+        public static final int loading=0x7f030005;
+        public static final int main=0x7f030006;
+        public static final int rss_list_row=0x7f030007;
     }
     public static final class menu {
         public static final int android_facebook_connect=0x7f0d0000;

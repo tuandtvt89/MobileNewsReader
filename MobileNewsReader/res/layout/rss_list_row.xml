@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@id/article_headline_classic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thumb_layout"
+            android:layout_toLeftOf="@id/thumb_layout"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxLines="2"
+            android:paddingLeft="5.0dip"
+            android:shadowColor="#ffd3d3d3"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="Video Ngọc Quyên bất ngờ khi được cầu hôn"
+            android:textColor="#ff000000"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/article_hour_date_classic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_headline_classic"
+            android:layout_toLeftOf="@id/thumb_layout"
+            android:paddingLeft="5.0dip"
+            android:paddingTop="5.0dip"
+            android:text="08:39 | Hôm nay"
+            android:textColor="#ff696969"
+            android:textSize="12.0sp" />
+
+        <FrameLayout
+            android:id="@id/thumb_layout"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5.0dip" >
+
+            <ImageView
+                android:id="@id/article_type_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/rss_arrow_thumbnail" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/article_lead_classic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:maxLines="3"
+        android:padding="5.0dip"
+        android:text="Bác sĩ Richard đã quỳ gối và tỏ tình với chân dài &apos;Anh muốn em nghe thấy tiếng trái tim anh"
+        android:textColor="#ff323232"
+        android:textSize="14.0sp" />
+
+</LinearLayout>
