@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import tuanda.mobilenewsreader.R;
 import tuanda.mobilenewsreader.adapter.NavDrawerListAdapter;
+import tuanda.mobilenewsreader.adapter.RssNavDrawerListAdapter;
 import tuanda.mobilenewsreader.fragment.HomeFragment;
 import tuanda.mobilenewsreader.model.NavDrawerItem;
+import tuanda.mobilenewsreader.model.RssNavDrawerItem;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
@@ -40,8 +42,8 @@ public class MainActivity extends Activity {
 	private String[] navMenuContents;
 	private TypedArray navMenuIcons;
 
-	private ArrayList<NavDrawerItem> navDrawerItems;
-	private NavDrawerListAdapter adapter;
+	private ArrayList<RssNavDrawerItem> navDrawerItems;
+	private RssNavDrawerListAdapter adapter;
 
 	@Override
 	protected void onCreate(Bundle paramBundle) {
@@ -49,7 +51,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		mTitle = mDrawerTitle = getTitle();
 		// load slide menu items
-		navMenuTitles = getResources().getStringArray(R.array.nav_drawer_title);
+		navMenuTitles = getResources().getStringArray(R.array.nav_drawer_content);
 		navMenuContents = getResources().getStringArray(
 				R.array.nav_drawer_content);
 		// nav drawer icons from resources
@@ -58,27 +60,18 @@ public class MainActivity extends Activity {
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
-		navDrawerItems = new ArrayList<NavDrawerItem>();
+		navDrawerItems = new ArrayList<RssNavDrawerItem>();
 		// adding nav drawer items to array
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0],
-				navMenuContents[0], navMenuIcons.getResourceId(0, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1],
-				navMenuContents[1], navMenuIcons.getResourceId(1, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2],
-				navMenuContents[2], navMenuIcons.getResourceId(2, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3],
-				navMenuContents[3], navMenuIcons.getResourceId(3, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],
-				navMenuContents[4], navMenuIcons.getResourceId(4, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],
-				navMenuContents[5], navMenuIcons.getResourceId(5, -1)));
+		for (int i = 0; i < navMenuTitles.length; i++) {
+			navDrawerItems.add(new RssNavDrawerItem(navMenuTitles[i], false));
+		}
 		// Recycle the typed array
 		navMenuIcons.recycle();
 
 		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
 		// setting the nav drawer list adapter
-		adapter = new NavDrawerListAdapter(getApplicationContext(),
+		adapter = new RssNavDrawerListAdapter(getApplicationContext(),
 				navDrawerItems);
 		mDrawerList.setAdapter(adapter);
 
@@ -109,7 +102,7 @@ public class MainActivity extends Activity {
 
 		if (paramBundle == null) {
 			// on first time display view for first nav item
-			 displayView(0);
+			displayView(0);
 		}
 
 	}

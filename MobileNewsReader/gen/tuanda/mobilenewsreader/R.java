@@ -990,6 +990,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int bg_tab_selected=0x7f020019;
         public static final int btn_dong_tablet=0x7f02001a;
         public static final int btn_logout=0x7f02001b;
+        public static final int button_check_off=0x7f0200c4;
+        public static final int button_check_on=0x7f0200c5;
         public static final int close_x=0x7f02001c;
         public static final int com_facebook_button_check=0x7f02001d;
         public static final int com_facebook_button_check_off=0x7f02001e;
@@ -1024,7 +1026,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int com_facebook_usersettingsfragment_background_gradient=0x7f02003b;
         public static final int content_drawer_remove=0x7f02003c;
         public static final int content_drawer_reorder=0x7f02003d;
-        public static final int counter_bg=0x7f0200c4;
+        public static final int counter_bg=0x7f0200c6;
         public static final int custom_tab_indicator=0x7f02003e;
         public static final int custom_tab_indicator_divider=0x7f02003f;
         public static final int custom_tab_indicator_focused=0x7f020040;
@@ -1087,7 +1089,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ic_with_3g=0x7f020079;
         public static final int ic_with_wifi=0x7f02007a;
         public static final int icon_logout=0x7f02007b;
-        public static final int image_bg=0x7f0200c5;
+        public static final int image_bg=0x7f0200c7;
         public static final int indicator_arrow=0x7f02007c;
         public static final int indicator_bg_bottom=0x7f02007d;
         public static final int indicator_bg_top=0x7f02007e;
@@ -1097,9 +1099,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int line_shadow_white=0x7f020082;
         public static final int linkhay_logo=0x7f020083;
         public static final int linkhay_text=0x7f020084;
-        public static final int list_item_bg_normal=0x7f0200c6;
-        public static final int list_item_bg_pressed=0x7f0200c7;
-        public static final int list_selector=0x7f0200c8;
+        public static final int list_item_bg_normal=0x7f0200c8;
+        public static final int list_item_bg_pressed=0x7f0200c9;
+        public static final int list_selector=0x7f0200ca;
         public static final int login_afamily=0x7f020085;
         public static final int login_autopro=0x7f020086;
         public static final int login_button=0x7f020087;
@@ -1110,7 +1112,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int login_genk=0x7f02008c;
         public static final int login_kenh14=0x7f02008d;
         public static final int login_linkhay_boder=0x7f02008e;
-        public static final int login_radius_background=0x7f0200c9;
+        public static final int login_radius_background=0x7f0200cb;
         public static final int login_sohanews=0x7f02008f;
         public static final int logo_afamily=0x7f020090;
         public static final int logo_autopro=0x7f020091;
@@ -1124,8 +1126,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int logo_rongbay=0x7f020099;
         public static final int logo_soha=0x7f02009a;
         public static final int logo_vc_vi=0x7f02009b;
-        public static final int margin_listview_divider=0x7f0200ca;
-        public static final int menu=0x7f0200cb;
+        public static final int margin_listview_divider=0x7f0200cc;
+        public static final int menu=0x7f0200cd;
         public static final int navigator_icon_arrow=0x7f02009c;
         public static final int navigator_icon_back=0x7f02009d;
         public static final int navigator_icon_black_back=0x7f02009e;
@@ -1140,13 +1142,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int progress=0x7f0200a7;
         public static final int progressbar=0x7f0200a8;
         public static final int progressbar_layout=0x7f0200a9;
-        public static final int rihanna=0x7f0200cc;
-        public static final int rss_arrow_thumbnail=0x7f0200cd;
+        public static final int rihanna=0x7f0200ce;
+        public static final int rss_arrow_thumbnail=0x7f0200cf;
         public static final int selector_backbutton=0x7f0200aa;
         public static final int selector_btn_tab=0x7f0200ab;
         public static final int shadow=0x7f0200ac;
         public static final int share_button=0x7f0200ad;
-        public static final int splash_bg=0x7f0200ce;
+        public static final int splash_bg=0x7f0200d0;
         public static final int tab_indicator=0x7f0200ae;
         public static final int toggletoswitch=0x7f0200af;
         public static final int topbar_bg_logo_off=0x7f0200b0;
@@ -1475,7 +1477,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fragment_home=0x7f030004;
         public static final int loading=0x7f030005;
         public static final int main=0x7f030006;
-        public static final int rss_list_row=0x7f030007;
+        public static final int rss_drawer_list_item=0x7f030007;
+        public static final int rss_list_row=0x7f030008;
     }
     public static final class menu {
         public static final int android_facebook_connect=0x7f0d0000;

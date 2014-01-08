@@ -118,14 +118,37 @@
         <item>Afamily</item>
     </string-array>
     <string-array name="nav_drawer_content">
-        <item>Đọc tin tổng hợp</item>
-        <item>Tin tức tổng hợp, tin nhanh mới nhất</item>
-        <item>Kênh thông tin kinh tế - tài chính</item>
-        <item>Thông tin kinh doanh - Doanh nhân</item>
-        <item>Trang dành cho tín đồ công nghệ</item>
-        <item>Kênh thông tin mới nhất về Game</item>
-        <item>Kênh thông tin ô tô, xe máy</item>
-        <item>Chuyên trang dành cho phụ nữ trẻ em</item>
+        <item>Hậu trường</item>
+        <item>Thể thao</item>
+        <item>Thời cuộc</item>
+        <item>Phong cách</item>
+        <item>Thư giãn</item>
+        <item>Góc độc giả</item>
+        <item>Cưới</item>
+        <item>Showbiz Việt</item>
+        <item>Châu Á</item>
+        <item>Hollywood</item>
+        <item>Bên lề</item>
+        <item>Clip</item>
+        <item>Khỏe đẹp</item>
+        <item>24h</item>
+        <item>Hình sự</item>
+        <item>Thương trường</item>
+        <item>Thời trang</item>
+        <item>Tâm tình</item>
+        <item>làm đẹp</item>
+        <item>Trắc nghiệm</item>
+        <item>Ăn chơi</item>
+        <item>Dân chơi</item>
+        <item>Cười</item>
+        <item>Game</item>
+        <item>Chơi blog</item>
+        <item>Thi ảnh</item>
+        <item>Miss</item>
+        <item>Cô dâu</item>
+        <item>Cẩm nang</item>
+        <item>Ảnh cưới</item>
+        <item>Chia sẻ</item>
     </string-array>
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
