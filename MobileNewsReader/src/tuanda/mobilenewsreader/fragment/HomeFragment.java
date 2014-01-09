@@ -13,6 +13,7 @@ import tuanda.mobilenewsreader.adapter.RssLazyAdapter;
 import tuanda.mobilenewsreader.helper.AlertDialogManager;
 import tuanda.mobilenewsreader.helper.XMLParser;
 import tuanda.mobilenewsreader.model.RssItem;
+import tuanda.mobilenewsreader.utils.Utils;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -27,11 +28,11 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-@SuppressLint("NewApi")
+@SuppressLint({ "NewApi", "ValidFragment" })
 public class HomeFragment extends Fragment {
 	// All static variables
-	static final String URL = "http://api.androidhive.info/music/music.xml";
-	static final String RSS_URL = "http://ngoisao.net/rss/hau-truong.rss";
+	private String RSS_URL_BASE = "http://ngoisao.net/rss/";
+	private String RSS_URL = "";
 	ArrayList<RssItem> rssItemList;
 	// Alert dialog manager
 	AlertDialogManager alert = new AlertDialogManager();
@@ -43,10 +44,14 @@ public class HomeFragment extends Fragment {
 	public static final String KEY_DESCRIPTION = "description";
 	public static final String KEY_DATE = "pubDate";
 	public static final String KEY_LINK = "link";
-	ListView list;
-	RssLazyAdapter adapter;
+	private ListView list;
+	private RssLazyAdapter adapter;
+	private int contentIndex;
 
-	public HomeFragment() {
+	public HomeFragment(int contentIndex) {
+		
+		this.contentIndex = contentIndex;
+		RSS_URL = RSS_URL_BASE + Utils.getURLContent(this.contentIndex);
 	}
 
 	@Override

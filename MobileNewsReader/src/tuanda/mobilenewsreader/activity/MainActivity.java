@@ -51,7 +51,8 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		mTitle = mDrawerTitle = getTitle();
 		// load slide menu items
-		navMenuTitles = getResources().getStringArray(R.array.nav_drawer_content);
+		navMenuTitles = getResources().getStringArray(
+				R.array.nav_drawer_content);
 		navMenuContents = getResources().getStringArray(
 				R.array.nav_drawer_content);
 		// nav drawer icons from resources
@@ -146,13 +147,7 @@ public class MainActivity extends Activity {
 	private void displayView(int position) {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
-		switch (position) {
-		case 0:
-			fragment = new HomeFragment();
-		default:
-			break;
-		}
-
+		fragment = new HomeFragment(position);
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
@@ -178,7 +173,7 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			// display view for selected nav drawer item
-			// displayView(position);
+			 displayView(position);
 		}
 	}
 
